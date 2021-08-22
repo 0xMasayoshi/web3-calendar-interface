@@ -10,6 +10,7 @@ import {
 import { Header } from '../Header'
 import { Footer } from '../Footer'
 import Link from 'next/link'
+import { AccountButton } from '../AccountButton';
 
 export interface AppContainerProps {
   children?: any;
@@ -23,13 +24,13 @@ export const AppContainer: React.FC<AppContainerProps> = ({ children }) => {
         <Header>
           <Link href="/" passHref>
             <Image
-              src="/raidguild_logo.png"
-              alt='raid guild logo'
-              htmlWidth="200px"
+              src="/raidguild__icon.png"
+              alt='raid guild icon'
+              htmlWidth="75px"
             />
           </Link>
           <Spacer />
-          <Button>Connect</Button>
+          <AccountButton />
         </Header>
       </Container>
       {children}
